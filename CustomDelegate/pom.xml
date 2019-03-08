@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>customdelegate</groupId>
+	<artifactId>customdelegate</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+
+	<name>customdelegate</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<activiti-version>5.22.0</activiti-version>
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-engine</artifactId>
+			<version>${activiti-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>aes128</groupId>
+			<artifactId>aes128</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/aes128-encryption-1.1.jar</systemPath>
+		</dependency>
+		<!-- <dependency> <groupId>commonlibs</groupId> <artifactId>aes128-encryption</artifactId> 
+			<version>1.1.3</version> </dependency> -->
+	</dependencies>
+	<!-- <repositories> <repository> <id>aes128-encryption</id> <name>aes128-encryption</name> 
+		<url>http://engci-maven.cisco.com/artifactory/cim-engg-team-group</url> </repository> 
+		</repositories> -->
+</project>
